@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel ="stylesheet" type="text/css" href="style.css">
+        <title>Tourist Places</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <h1 class="logo"><b><span>ADVEN</span>TURE</b></h1>
+                <ul class="nav-link">
+                    <li id="active" class="ctn"><a href="#">Home</a></li>
+                    <li class="ctn"><a href="#event">Famous</a></li>
+                    <li class="ctn"><a href="#tour">Explore</a></li>
+                    <li class="ctn"><a href="#contact">Contact</a></li>
+                </ul>
+            <img src="images/menu-btn.png" alt="" class="menu-btn"> 
+            </nav>
+            <div class="header-content">
+                <h2>Explore tourism of the Aurangabad, Maharashtra</h2>
+                <div class="line"></div><br>
+                <a href="https://www.thrillophilia.com/places-to-visit-in-aurangabad" target="_blank" class="ctn">Learn More</a>
+            </div>
+        </header> 
+        <section class="event" id="event">
+            <div class="title">
+                <h1>Famous Place</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="images/Fort.jpg" alt=""  width="300px" height="200px">
+                    <h4>Daulatabad Fort</h4>
+                    <p>Daulatabad Qilla Aaa Fort is a frozen time capsule. Its location is on the top of a cone-shaped mountain in Aurangabad, about 200 meters above sea level. Its strategic location, incredible architecture and three-tiered defence system are wonderful. They make it one of the most powerful mountain forts in the state.Also known as Devgiri Fort.</p>
+                    <a href="https://www.tourmyindia.com/states/maharashtra/daulatabad.html" target="_blank" class="ctn">Learn More</a>
+                </div><br>
+                <div class="col">
+                    <img src="images/bibi.jpg" alt="" width="300px" height="200px">
+                    <h4>Bibi Ka Maqbara</h4>
+                    <p>Situated about 3 km from the city is Bibi Ka Maqbara, the burial place of Aurangzeb’s wife, Rabia-ud-Durrani. It is an imitation of the Taj at Agra, and, due to its similar design, it is popularly known as the Mini Taj of the Deccan.Built on an elevated platform, it is guarded by four minarets along its four corners and can be reached by a series of steps from three different sides.</p>
+                    <a href="https://www.yatra.com/indian-monuments/aurangabad/bibi-ka-maqbara" class="ctn">Learn More</a>
+                </div>
+            </div>
+        </section>
+        <section class="tour" id="tour">
+            <div class="row">
+                <div class="col content-col">
+                    <h1>List & Photo Gallery</h1>
+                    <div class="line"></div>
+                    <p>Listed below some places to visit
+                        <ul>
+                            <li>1) Ellora Caves: Ancient Ruins • Caverns & Caves.</li>
+                            <li>2) Grishneshwar Jyotirlinga Temple. Religious Sites.</li>   
+                            <li>3) Bibi Ka Maqbara. </li>    
+                            <li>4) Bhadra Maruti.</li>     
+                            <li>5) Prozone Mall Aurangabad. Shopping Malls.</li>    
+                            <li>6) Jain Temple in Ellora caves. Architectural Buildings • Religious Sites.</li>    
+                            <li>7) Jayakwadi Dam. Dams. </li>
+                            <li>Many more..</li>
+                        </ul>
+                    </p>
+                    <a href="https://www.intermiles.com/blog/15-places-to-visit-in-aurangabad" target="_blank" class="ctn">Learn More</a>
+                </div>
+                <div class ="col image-col">
+                    <div class="image-gallery">
+                        <img src="images/temple.jpg" alt="">
+                        <img src="images/ajanta.jpg" alt="">
+                    </div>
+                </div>    
+                    <div class="col image-col">
+                       <div class="image-gallery">
+                        <img src="images/zoo.jpg" alt="">
+                        <img src="images/verul.jfif" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="contactform">
+                <h2>Contact Us</h2>
+             <form>
+                 <div class="form-group">
+                     <label for="clientname">Name</label>
+                     <input type="name" class="form-control" id="clientname"  autocomplete="off">
+                   </div>
+                 <div class="form-group">
+                   <label for="clientemail">Email address</label>
+                   <input type="email" class="form-control" id="clientemail" aria-describedby="emailHelp" autocomplete="off">
+                   <small id="emailHelp"class="form-text text-muted">
+                     We'll never share your email & phone with anyone else.</small>
+                 </div>
+                 <div class="form-group">
+                   <label for="clientphone">Phone</label>
+                   <input type="phone" class="form-control" id="clientphone"  autocomplete="off">
+                 </div>
+                 <div class="form-group">
+                     <label for="clientenquiry">Enquiry</label>
+                     <input type="enquiry" class="form-control" id="clientenquiry"  autocomplete="off" style="min-height: 50px;">
+                   </div>
+                 <div id="form-check">
+                   <input type="checkbox" class="form-check-input" id="isclient">
+                   <label class="form-check-label" for="isclient">I want to explore or want to conatct.</label>
+                 </div>
+                 <button type="submit" class="btn btn-primary">Send</button>
+               </form>
+            </div>
+        </section>
+        <section class="footer"> 
+            <p>Aurangabad,Maharashtra | Email: contact@example.com| Phone: 8000-123-425</p>
+            <p> Copyright @ 2022 Outdoor Adventure in Aurangabad</p>
+        </section>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn');
+            const navlink = document.querySelector('.nav-link');
+
+            menuBtn.addEventListener('click',()=> {
+                navlink.classList.toggle('mobile-menu')
+            })
+        </script>  
+         
+    </body> 
+</html>       

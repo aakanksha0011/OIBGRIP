@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+   overflow-x: hidden;
+}
+a{
+    text-decoration: none;
+}
+.logo span{
+    color: seagreen;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/back.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: whitesmoke;
+    text-align: center;
+}
+.header-content h2{
+    font-size: 8vmin;
+}
+.line{
+    width: 250px;
+    height: 4px;
+    background: crimson;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+#actve{
+    color: crimson;
+    text-decoration: underline;
+    font-weight: bold;
+
+}
+.ctn {
+    padding: 8px 16px;
+    background: crimson;
+    border-radius: 30px;
+    color: whitesmoke;
+    margin-left: 50px;
+}
+ul{
+    list-style: none;
+}
+.navbar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+
+}
+.nav-link{
+    display: flex;
+    align-items: center;
+}
+.nav-link li{
+    margin: 0 20px;
+}
+.nav-link li:hover{
+    transform: scale(1.1);
+    display: block;
+    background: rgb(236, 234, 217);
+}
+.menu-btn{
+    position: absolute;
+    display: none;
+    top: 30px;
+    left: 390px;
+    cursor: pointer;
+    width: 40px;
+
+}
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: cornflowerblue;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.event .row{
+   margin-top: 50px;
+   margin-left: 60px;
+}
+h4{
+    font-size: 6vmin;
+    color: darkslategrey;
+    margin: 20px auto;
+}
+p{
+    color: forestgreen;
+    padding: 0px 40px;
+    left: 10px;
+}
+.tour .image-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+.content-col{
+    width: 70%;
+}
+.content-col h1{
+    text-align: center;
+}
+.content-col p{
+    text-align: left;
+}
+.content-col .ctn{
+    margin-left: 50px;
+}
+.image-col{
+    width: 60%;
+}
+.image-gallery img{
+    width: 300px;
+    margin: 10px;
+}
+.contactform{
+    padding: 0px 152px;
+    padding-top: 3px;
+    font-family: 'Fira Sans', sans-serif;
+    margin: 13px 127px;
+    align-items: center;
+    border: 0.5rem solid #000;
+    padding-bottom: 10px;
+}
+.contactform h1{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 12px 0;
+}
+.contactform form div{
+    width: 16vw;
+    border-radius: 5px;
+    margin:6px 0;
+    padding: 3px;
+    display: flex;
+    flex-direction: column;
+}
+.contactform form div input{
+    width: 26vw;
+    border-radius: 5px;
+    margin:6px 0 0 0;
+    padding: 3px;
+}
+#emailHelp{
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+    width: 26vw;
+}
+#form-check input{
+    width: 24px;
+    margin: 2px 0;
+    margin-right: 10px;
+}
+.footer{
+    width: 100%;
+    min-height: 100px;
+    padding: 20px 40px;
+    margin: 0;
+    background: rgb(59, 40, 85);
+    text-align: center;
+}
+.footer p{
+    color: whitesmoke;
+    margin: 4px auto;
+    padding: 20px auto;
+}
+@media screen and (max-width:850px){
+    .menu-btn{
+        display: block;
+    }
+    .navbar{
+        padding: 0;
+    }
+    .logo{
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
+    .nav-link {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(24, 63, 90);
+        margin-top: -900px;
+        transition: all .5s ease-in-out;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    } 
+    .nav-link li{
+        margin: 20px auto;
+    }  
+    .row{
+        flex-direction: column;
+    }
+    .event .row{
+        margin-left: 10px;
+    }
+    .row col{
+        margin: 10px auto;
+        justify-content: space-between;
+        padding-top: 10px;
+        padding: 0px 40px;
+    }
+    col img{
+        max-width: 90%;
+    }
+    .footer{
+        padding: 10px;
+    }
+    .contactform{
+        align-items: center;
+        padding: 3px 8px;
+        padding-top: 7px;
+        margin: 0px 0px;
+        text-align: left;
+
+    }
+    .contactform form div input {
+        width: 56vw;
+    }
+}
+img{
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
